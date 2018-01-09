@@ -1,0 +1,94 @@
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\website.dll.config
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\website.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\website.pdb
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Aspose.Cells.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Bll.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Dal.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\DbUtility.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\EPPlus.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\ExcelAbstraction.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\ExcelAbstraction.NPOI.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\ICSharpCode.SharpZipLib.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Microsoft.QualityTools.Testing.Fakes.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Model.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Newtonsoft.Json.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\NPOI.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\NPOI.OOXML.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\NPOI.OpenXml4Net.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\NPOI.OpenXmlFormats.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Tools.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\zxing.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\SystemUserDefined.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Bll.pdb
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Dal.pdb
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\DbUtility.pdb
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Model.pdb
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Tools.pdb
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Newtonsoft.Json.xml
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\NPOI.xml
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\SystemUserDefined.pdb
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\obj\Release\website.csprojFakesResolveAssemblyReference.cache
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\obj\Release\website.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\obj\Release\website.pdb
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\zxing.presentation.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\obj\Release\website.csprojResolveAssemblyReference.cache
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\website.dll.config
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\website.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\website.pdb
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Bll.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Dal.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\DbUtility.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\EPPlus.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\ExcelAbstraction.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\ExcelAbstraction.NPOI.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\ICSharpCode.SharpZipLib.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Microsoft.QualityTools.Testing.Fakes.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Model.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Newtonsoft.Json.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\NPOI.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\NPOI.OOXML.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\NPOI.OpenXml4Net.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\NPOI.OpenXmlFormats.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Tools.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\SystemUserDefined.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Bll.pdb
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Dal.pdb
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\DbUtility.pdb
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Model.pdb
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Tools.pdb
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\Newtonsoft.Json.xml
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\NPOI.xml
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\bin\SystemUserDefined.pdb
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\obj\Release\website.csprojFakesResolveAssemblyReference.cache
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\obj\Release\website.csprojResolveAssemblyReference.cache
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\obj\Release\website.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\website\obj\Release\website.pdb
+E:\Magna_MES\Magna_MES\website\bin\website.dll.config
+E:\Magna_MES\Magna_MES\website\bin\website.dll
+E:\Magna_MES\Magna_MES\website\bin\website.pdb
+E:\Magna_MES\Magna_MES\website\bin\Bll.dll
+E:\Magna_MES\Magna_MES\website\bin\Dal.dll
+E:\Magna_MES\Magna_MES\website\bin\DbUtility.dll
+E:\Magna_MES\Magna_MES\website\bin\EPPlus.dll
+E:\Magna_MES\Magna_MES\website\bin\ExcelAbstraction.dll
+E:\Magna_MES\Magna_MES\website\bin\ExcelAbstraction.NPOI.dll
+E:\Magna_MES\Magna_MES\website\bin\ICSharpCode.SharpZipLib.dll
+E:\Magna_MES\Magna_MES\website\bin\Microsoft.QualityTools.Testing.Fakes.dll
+E:\Magna_MES\Magna_MES\website\bin\Model.dll
+E:\Magna_MES\Magna_MES\website\bin\Newtonsoft.Json.dll
+E:\Magna_MES\Magna_MES\website\bin\NPOI.dll
+E:\Magna_MES\Magna_MES\website\bin\NPOI.OOXML.dll
+E:\Magna_MES\Magna_MES\website\bin\NPOI.OpenXml4Net.dll
+E:\Magna_MES\Magna_MES\website\bin\NPOI.OpenXmlFormats.dll
+E:\Magna_MES\Magna_MES\website\bin\Tools.dll
+E:\Magna_MES\Magna_MES\website\bin\Bll.pdb
+E:\Magna_MES\Magna_MES\website\bin\Dal.pdb
+E:\Magna_MES\Magna_MES\website\bin\DbUtility.pdb
+E:\Magna_MES\Magna_MES\website\bin\Model.pdb
+E:\Magna_MES\Magna_MES\website\bin\Tools.pdb
+E:\Magna_MES\Magna_MES\website\bin\Newtonsoft.Json.xml
+E:\Magna_MES\Magna_MES\website\bin\NPOI.xml
+E:\Magna_MES\Magna_MES\website\obj\Release\website.csprojFakesResolveAssemblyReference.cache
+E:\Magna_MES\Magna_MES\website\obj\Release\website.csprojResolveAssemblyReference.cache
+E:\Magna_MES\Magna_MES\website\obj\Release\website.dll
+E:\Magna_MES\Magna_MES\website\obj\Release\website.pdb

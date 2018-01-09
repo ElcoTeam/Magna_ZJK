@@ -1,0 +1,11 @@
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\bin\Debug\Model.dll
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\bin\Debug\Model.pdb
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\obj\Debug\Model.dll
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\obj\Debug\Model.pdb
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\bin\Debug\Newtonsoft.Json.dll
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\Magna_MES\Magna_MES\Model\bin\Debug\Model.dll
+E:\Magna_MES\Magna_MES\Model\bin\Debug\Model.pdb
+E:\Magna_MES\Magna_MES\Model\bin\Debug\Newtonsoft.Json.dll
+E:\Magna_MES\Magna_MES\Model\obj\Debug\Model.dll
+E:\Magna_MES\Magna_MES\Model\obj\Debug\Model.pdb

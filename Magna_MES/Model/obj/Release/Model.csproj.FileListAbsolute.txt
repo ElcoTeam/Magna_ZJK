@@ -1,0 +1,16 @@
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\bin\Release\Model.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\bin\Release\Model.pdb
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\bin\Release\Newtonsoft.Json.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\obj\Release\Model.dll
+D:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\obj\Release\Model.pdb
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\bin\Release\Model.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\bin\Release\Model.pdb
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\bin\Release\Newtonsoft.Json.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\obj\Release\Model.dll
+E:\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Model\obj\Release\Model.pdb
+E:\Magna_MES\Magna_MES\Model\bin\Release\Model.dll
+E:\Magna_MES\Magna_MES\Model\bin\Release\Model.pdb
+E:\Magna_MES\Magna_MES\Model\bin\Release\Newtonsoft.Json.dll
+E:\Magna_MES\Magna_MES\Model\obj\Release\Model.dll
+E:\Magna_MES\Magna_MES\Model\obj\Release\Model.pdb

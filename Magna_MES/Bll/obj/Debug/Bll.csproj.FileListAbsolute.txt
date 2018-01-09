@@ -1,0 +1,30 @@
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\bin\Debug\Bll.dll
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\bin\Debug\Bll.pdb
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\bin\Debug\Dal.dll
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\bin\Debug\Model.dll
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\bin\Debug\Newtonsoft.Json.dll
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\bin\Debug\Tools.dll
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\bin\Debug\DbUtility.dll
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\bin\Debug\Dal.pdb
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\bin\Debug\Model.pdb
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\bin\Debug\Tools.pdb
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\bin\Debug\DbUtility.pdb
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\obj\Debug\Bll.dll
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\obj\Debug\Bll.pdb
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\bin\Debug\zxing.dll
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\bin\Debug\SystemUserDefined.dll
+d:\我的文档\Visual Studio 2013\Projects\Project1\trunk\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\A-MGMES_Demo_Solution10-10版本\Bll\bin\Debug\SystemUserDefined.pdb
+E:\Magna_MES\Magna_MES\Bll\bin\Debug\Bll.dll
+E:\Magna_MES\Magna_MES\Bll\bin\Debug\Bll.pdb
+E:\Magna_MES\Magna_MES\Bll\bin\Debug\Dal.dll
+E:\Magna_MES\Magna_MES\Bll\bin\Debug\DbUtility.dll
+E:\Magna_MES\Magna_MES\Bll\bin\Debug\Model.dll
+E:\Magna_MES\Magna_MES\Bll\bin\Debug\Newtonsoft.Json.dll
+E:\Magna_MES\Magna_MES\Bll\bin\Debug\zxing.dll
+E:\Magna_MES\Magna_MES\Bll\bin\Debug\Dal.pdb
+E:\Magna_MES\Magna_MES\Bll\bin\Debug\DbUtility.pdb
+E:\Magna_MES\Magna_MES\Bll\bin\Debug\Model.pdb
+E:\Magna_MES\Magna_MES\Bll\obj\Debug\Bll.csprojResolveAssemblyReference.cache
+E:\Magna_MES\Magna_MES\Bll\obj\Debug\Bll.dll
+E:\Magna_MES\Magna_MES\Bll\obj\Debug\Bll.pdb

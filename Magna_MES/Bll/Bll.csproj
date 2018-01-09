@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01A72758-AFE2-4BD2-922E-784FAD3329CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bll</RootNamespace>
+    <AssemblyName>Bll</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AndonTaglinesBLL.cs" />
+    <Compile Include="checkRepair_BLL.cs" />
+    <Compile Include="checkReport_BLL.cs" />
+    <Compile Include="DelJetSEQNR_BLL.cs" />
+    <Compile Include="EditPassword_BLL.cs" />
+    <Compile Include="Failure_BLL.cs" />
+    <Compile Include="FTT_BLL.cs" />
+    <Compile Include="mg-CustomerOrder_3BLL.cs" />
+    <Compile Include="mg_alarmBLL.cs" />
+    <Compile Include="mg_Part1BLL.cs" />
+    <Compile Include="mg_BOMTestBLL.cs" />
+    <Compile Include="mg_ProductBLL.cs" />
+    <Compile Include="mg_FlowLine1BLL.cs" />
+    <Compile Include="mg_MaterialPropertyBLL.cs" />
+    <Compile Include="mg_TestRepairItemBLL.cs" />
+    <Compile Include="mg_Report_MachineStopBLL.cs" />
+    <Compile Include="mg_TestBLL.cs" />
+    <Compile Include="mg_BOMTestGroupBLL.cs" />
+    <Compile Include="mg_MailBLL.cs" />
+    <Compile Include="mg_TestPartBLL.cs" />
+    <Compile Include="mg_PiistationBLL.cs" />
+    <Compile Include="mg_sys_logBll.cs" />
+    <Compile Include="mg_allpartBLL.cs" />
+    <Compile Include="mg_allpart_part_relBLL.cs" />
+    <Compile Include="mg_BOMBLL.cs" />
+    <Compile Include="mg_BOM_MatchBLL.cs" />
+    <Compile Include="mg_ClassesBLL.cs" />
+    <Compile Include="mg_CustomerOrderBLL.cs" />
+    <Compile Include="mg_CuttedOrderBLL.cs" />
+    <Compile Include="mg_DepartmentBLL.cs" />
+    <Compile Include="mg_FlowLineBLL.cs" />
+    <Compile Include="mg_machinestepBLL.cs" />
+    <Compile Include="mg_ODSBLL.cs" />
+    <Compile Include="mg_OperatorBLL.cs" />
+    <Compile Include="mg_orderBLL.cs" />
+    <Compile Include="mg_PartBLL.cs" />
+    <Compile Include="mg_PositionBLL.cs" />
+    <Compile Include="mg_PropertyBLL.cs" />
+    <Compile Include="mg_StationBLL.cs" />
+    <Compile Include="mg_StepBLL.cs" />
+    <Compile Include="mg_sys_logBll1.cs" />
+    <Compile Include="mg_UserBLL.cs" />
+    <Compile Include="mg_workqueueBLL.cs" />
+    <Compile Include="mg_PoInspectItemBLL.cs" />
+    <Compile Include="Production_AlarmDlyReport_BLL.cs" />
+    <Compile Include="Production_AlarmTrendReport_BLL.cs" />
+    <Compile Include="Production_Report_BLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="px_InternetPrinterBLL.cs" />
+    <Compile Include="px_MaterialsortprintingBLL.cs" />
+    <Compile Include="px_PanrameterBLL.cs" />
+    <Compile Include="px_PrintBLL.cs" />
+    <Compile Include="px_ShowChiClientBLL.cs" />
+    <Compile Include="Sys_MenuBLL.cs" />
+    <Compile Include="Time_ReportBLL.cs" />
+    <Compile Include="TransportHistory_BLL.cs" />
+    <Compile Include="volumn_report_BLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dal\Dal.csproj">
+      <Project>{8b13835f-89a4-4e32-836d-17c4ebdb6176}</Project>
+      <Name>Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DbUtility\DbUtility.csproj">
+      <Project>{910e6091-a03b-4a02-8646-5f54bccbfd02}</Project>
+      <Name>DbUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{d5eec511-f12c-4bac-8099-cc5dabdde685}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
