@@ -3,6 +3,7 @@
  </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <script src="../js/register.js"></script>
+     <script>document.write(" <link href='/css/foundation.css?rnd= " + Math.random() + "' rel='stylesheet' type='text/css'>");</script>
     <script>
          var UserID="";
          $(function () {
@@ -89,7 +90,7 @@
              });
          }
     </script>
-   
+   <div class="top">
     <div class="reg-box" id="verifyCheck" style="margin-left: 10px; margin-top: 20px; margin-right: 30px;">
             <div class="part1">                	
                    <div class="item col-xs-12" style="float: none;">
@@ -143,10 +144,11 @@
                        </div>
                    </div>
                   <div>
-                      <input id="save" type="button" value="保存"/>
+                      <input class="saveBtn" id="save" type="button"  value="保存"/>
                   </div>
            </div>
       </div>
+       </div>
     <style>
         .item col-xs-12{
             width:100%;

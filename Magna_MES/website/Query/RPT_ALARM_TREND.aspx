@@ -13,6 +13,7 @@
     <script src="../bootstrap/jqPaginator.js"></script>
     <script src="../js/highcharts/highcharts.js"></script>
     <script src="../js/highcharts/modules/exporting.js"></script>
+    <script>document.write(" <link href='/css/foundation.css?rnd= " + Math.random() + "' rel='stylesheet' type='text/css'>");</script>
     <style type="text/css">
 
  #left{width: 50%;float: left; background: #ffffff;}
@@ -26,7 +27,7 @@
      <div class="top">
         <table cellpadding="0" cellspacing="0" >
             <tr>
-                <td class="title"  >
+                <td   >
                     
                         开始日期：<br />
                     
@@ -35,7 +36,7 @@
                 <td style="width: 120px">
                     <input id="start_time" class="easyui-datebox" data-options="required:true,showTime:false" />
                 </td>
-                <td class="title"  >
+                <td   >
                     
                         结束日期：<br />
                     
@@ -45,14 +46,14 @@
                     <input id="end_time" class="easyui-datebox" data-options="required:true,showTime:false" />
                 </td>
                 <td >
-                  <a style="font-size:12px;font-weight:700;color:#000000" class="easyui-linkbutton btn btn-default" href="javascript:;" onclick="searchName()"">查询</a>
+                  <a class="topsearchBtn" href="javascript:;" onclick="searchName()"">查询</a>
                 </td>
                  <td>  
                   
-                  <a style="font-size:12px;font-weight:700;color:#000000" class="easyui-linkbutton btn btn-default" href="javascript:;" onclick ="excelFor()">导出</a>
+                  <a class="topexcelBtn" href="javascript:;" onclick ="excelFor()">导出</a>
                 </td>
                  <td>  
-                  <a style="font-size:12px;font-weight:700;color:#000000" class="easyui-linkbutton btn btn-default" href="javascript:;" onclick ="print()">打印</a>
+                  <a  class="topprintBtn" href="javascript:;" onclick ="print()">打印</a>
                 </td>
             </tr>
         </table>
@@ -67,7 +68,7 @@
             </table>
         </div>
         <div id="right" class="chart-Panel">
-            <div id="label_time" style="width: 100%; font-size:14px;padding:5px;font-weight:700;color:#000000; text-align:center;margin: 0 auto;" >
+            <div id="label_time" >
                
             </div>
               <div id="upright_container" style="width: 100%; height: 50%; text-align:center;padding:15px;  margin: 0 auto;border:1px">

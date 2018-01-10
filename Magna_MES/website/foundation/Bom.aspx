@@ -21,7 +21,7 @@
                     <a class="toppenBtn">编辑所选</a>
                     <a class="topdelBtn">删除所选</a></span><span style="float:right;">
                         <input id="orderPn" style="width: 150px" type="text"> <a class="topsearchBtn" href="javascript:;" onclick="searchPn(2)">查询</a>
-  <a style="font-size: 12px; font-weight: 700; color: #000000" class="easyui-linkbutton" href="javascript:;" onclick="excelForm()">导出Excel</a></span></div>
+  <a  class="topexcelBtn"  onclick="excelForm()">导出Excel</a></span></div>
 </td>
 
             </tr>

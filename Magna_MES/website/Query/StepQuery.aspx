@@ -18,6 +18,7 @@
         </h4>
     </div>
     <div class="top">
+        
         <table cellpadding="0" cellspacing="0" style="width: 100%">
             <tr>
                  <td style="width:7.5%"><span class="title">步骤日志查询</span> <%--<span class="subDesc">拖拽数据行进行排序</span>--%>
@@ -26,13 +27,13 @@
             <tr>
                 <td style="width: 12.5%">
                     <span style="margin-left: 10px;">流水线：</span>
-                    <select id="fl_id_s" class="easyui-combobox uservalue" style="height: 25px;"
+                    <select id="fl_id_s" class="easyui-combobox uservalue" 
                         data-options="valueField: 'fl_id',textField: 'fl_name',onChange:reloadst_id_s">
                     </select>
                 </td>
                 <td style="width: 12.5%">
                     <span>工位：</span>
-                    <select id="st_id_s" class="easyui-combobox uservalue" style="height: 25px;"
+                    <select id="st_id_s" class="easyui-combobox uservalue" 
                         data-options="valueField: 'st_no',textField: 'st_no'">
                     </select>
                 </td>
@@ -51,19 +52,19 @@
                 </td>
                 <td style="width: 10%">
                      <span>开始时间：</span>
-                    <input id="start_time" class="easyui-datetimebox uservalue" data-options="required:true,showSeconds:false"  />
+                    <input id="start_time" class="easyui-datetimebox uservalue" data-options="required:true,showSeconds:true"  />
                 </td>
                 <td style="width: 10%">
                      <span>结束时间：</span>
-                    <input id="end_time" class="easyui-datetimebox uservalue" data-options="required:true,showSeconds:false"  />
+                    <input id="end_time" class="easyui-datetimebox uservalue" data-options="required:true,showSeconds:true"  />
                 </td>
                 <td style="width: 5%;">
                     <input  type="button" class="topsearchBtn"  onclick="searchInfos(1,1)" value="查询"/></td>
                 <td style="width: 5%">
-                    <input type="button" class="toppenBtn" style="font-size: 12px; font-weight: 700; color: #000000" value="编辑"/>
+                    <input type="button" class="toppenBtn"  value="编辑"/>
                 </td>
                 <td style="width: 5%;">
-                    <a style="font-size: 12px; font-weight: 700; color: #000000" class="easyui-linkbutton" href="javascript:;" onclick="excelForm()">导出Excel</a>
+                    <input type="button"  class="topexcelBtn"  onclick="excelForm()" value="导出Excel"/>
                 </td>
             </tr>
         </table>

@@ -8,11 +8,12 @@
     <script src="../js/highcharts/modules/exporting.js"></script>
     <script src="../js/easyui.datagrid.export.js"></script>
     <script src="../js/easyui.datagrid.print.js"></script>
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" /s>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
     <script src="../bootstrap/js/bootstrap.min.js"></script>
     <script src="../bootstrap/jqPaginator.js"></script>
     <script src="../js/highcharts/highcharts.js"></script>
     <script src="../js/highcharts/modules/exporting.js"></script>
+     <script>document.write(" <link href='/css/foundation.css?rnd= " + Math.random() + "' rel='stylesheet' type='text/css'>");</script>
     <style type="text/css">
       
  #left{width: 50%;float: left; background: #ffffff;}
@@ -29,7 +30,7 @@
         <div class="top">
         <table cellpadding="0" cellspacing="0" style="width: 50%">
             <tr>
-                <td class="title"  >
+                <td >
                     
                         选择日期：<br />
                     Choose the Date
@@ -40,14 +41,14 @@
                 </td>
                 
                 <td >
-                  <a style="font-size:12px;font-weight:700;color:#000000" class="easyui-linkbutton btn btn-default" href="javascript:;" onclick="searchName()"">查询</a>
+                  <a class="topsearchBtn" href="javascript:;" onclick="searchName()"">查询</a>
                 </td>
                  <td>  
                   <input id="subs" type="submit"  value="导出Excel" hidden="hidden"/>
-                  <a style="font-size:12px;font-weight:700;color:#000000" class="easyui-linkbutton btn btn-default" href="javascript:;" onclick ="excelFor()">导出</a>
+                  <a  class="topexcelBtn" href="javascript:;" onclick ="excelFor()">导出</a>
                 </td>
                  <td>  
-                  <a style="font-size:12px;font-weight:700;color:#000000" class="easyui-linkbutton btn btn-default" href="javascript:;" onclick ="print()">打印</a>
+                  <a  class="topprintBtn" href="javascript:;" onclick ="print()">打印</a>
                 </td>
             </tr>
         </table>

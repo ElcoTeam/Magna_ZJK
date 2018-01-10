@@ -22,10 +22,10 @@
                     <input type ="text" id="seqnr" Width="200px" ></input>
                 </td>
                 <td style="width: 100px; text-align: right">
-                    <input type="button" id="edit"  value="修改顺序号"/>
+                    <input type="button" id="edit"  class="penBtn" value="修改顺序号"/>
                 </td>
                 <td style="width: 100px; text-align: right">
-                    <input type="button" id="select"  value="查询"/>
+                    <input type="button" id="select" class="searchBtn" value="查询"/>
                 </td>
             </tr>
         </table>

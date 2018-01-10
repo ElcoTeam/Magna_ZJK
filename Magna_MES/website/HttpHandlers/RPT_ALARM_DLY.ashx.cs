@@ -7,7 +7,6 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Text;
-using Tools;
 using Bll;
 using DbUtility;
 using Model;

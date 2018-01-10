@@ -50,7 +50,7 @@
         DataKeyNames="cl_id" CssClass="gridview" 
         onpageindexchanging="GridView1_PageIndexChanging" OnRowCancelingEdit="GridView1_RowCancelingEdit" >
         <Columns>
-        <%--    <asp:TemplateField HeaderText="班次ID"> 
+           <asp:TemplateField HeaderText="班次ID"  Visible="false"> 
                 <ItemTemplate>
                     <asp:Label ID="Label1" runat="server" Text='<%# Bind("cl_id") %>'></asp:Label>
                 </ItemTemplate>
@@ -59,7 +59,7 @@
                 </EditItemTemplate>
                 <HeaderStyle HorizontalAlign="Center" />
                 <ItemStyle Width="100px" />
-            </asp:TemplateField>--%>
+            </asp:TemplateField>
             <asp:TemplateField HeaderText="班次名称">
                 <ItemTemplate>
                     <asp:Label ID="Label3" runat="server" Text='<%# Bind("cl_name") %>'></asp:Label>

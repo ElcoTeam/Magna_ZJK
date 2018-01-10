@@ -26,6 +26,10 @@ namespace website.HttpHandlers
                     fl();
                    // context.Response.Write(mg_sys_logBll.getfl_idList());
                     break;
+                case "get_fl_listforTor":
+                    get_fl_listforTor();
+                    // context.Response.Write(mg_sys_logBll.getfl_idList());
+                    break;
                 case "get_st_list":
                     st();
                     //context.Response.Write(mg_sys_logBll.getst_idList(context.Request["fl_id"]));
@@ -69,6 +73,12 @@ namespace website.HttpHandlers
         void fl()
         {
             string a = mg_sys_logBll.getfl_idList();
+            Response.Write(a);
+            Response.End();
+        }
+        void get_fl_listforTor()
+        {
+            string a = mg_sys_logBll.get_fl_listforTor();
             Response.Write(a);
             Response.End();
         }

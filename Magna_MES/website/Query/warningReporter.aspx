@@ -8,11 +8,9 @@
     <script src="../js/highcharts/modules/exporting.js"></script>
     <script src="../js/easyui.datagrid.export.js"></script>
     <script src="../js/easyui.datagrid.print.js"></script>
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" /s>
-    <script src="../bootstrap/js/bootstrap.min.js"></script>
-    <script src="../bootstrap/jqPaginator.js"></script>
     <script src="../js/highcharts/highcharts.js"></script>
     <script src="../js/highcharts/modules/exporting.js"></script>
+     <script>document.write(" <link href='/css/foundation.css?rnd= " + Math.random() + "' rel='stylesheet' type='text/css'>");</script>
     <style type="text/css">
 </style>
 </asp:Content>
@@ -20,12 +18,23 @@
     <input id="subs" type="submit"  value="导出Excel" hidden="hidden"/>
      <div class="top">
         <table cellpadding="0" cellspacing="0" >
+             <thead>
+                <tr>
+                    <td><span class="title">报警信息</span></td>
+                </tr>
+            </thead>
+            <tbody>
             <tr>
+                <td>
                    <span>流水线：</span>
-                    <select id="fl_id_s" class="easyui-combobox" style="width: 150px; height: 25px;"
+                    </td>
+                <td><select id="fl_id_s" class="easyui-combobox uservalue" 
                         data-options="valueField: 'fl_id',textField: 'fl_name'">
                     </select>
-                <td class="title"  >
+
+                </td>
+                    
+                <td>
                     
                         开始日期：
                     
@@ -34,26 +43,27 @@
                 <td style="width: 120px">
                     <input id="start_time" class="easyui-datetimebox" data-options="required:true" />
                 </td>
-                <td class="title"  >
+                <td  >
                     
                         结束日期：
                     
                     
                 </td>  
-                <td style="width: 120px">
+                <td>
                     <input id="end_time" class="easyui-datetimebox" data-options="required:true" />
                 </td>
                 <td >
-                  <a style="font-size:12px;font-weight:700;color:#000000" class="easyui-linkbutton btn btn-default" href="javascript:;" onclick="searchName()"">查询</a>
+                  <input type="button"  class="topsearchBtn"onclick="searchName()" value="查询"/>
                 </td>
                  <td>  
                   
-                  <a style="font-size:12px;font-weight:700;color:#000000" class="easyui-linkbutton btn btn-default" href="javascript:;" onclick ="excelFor()">导出</a>
+                  <input type="button"  class="topexcelBtn" onclick ="excelFor()" value="导出"/>
                 </td>
                  <td>  
-                  <a style="font-size:12px;font-weight:700;color:#000000" class="easyui-linkbutton btn btn-default" href="javascript:;" onclick ="print()">打印</a>
+                  <input type="button" class="topprintBtn" onclick ="print()" value="打印"/>
                 </td>
             </tr>
+                </tbody>
         </table>
 
     </div>
@@ -62,7 +72,7 @@
         <div id="left">
        
             <!-- 数据表格  -->
-            <table id="gridTable"  style="width: 99%;">
+            <table id="gridTable"  title="报警信息" style="width: 99%;">
             </table>
         </div>
         <div id="right" style="display:none" class="chart-Panel">
@@ -637,6 +647,7 @@
         function print() {
             var start_time = $('#start_time').datetimebox('getValue');
             var end_time = $('#end_time').datetimebox('getValue');
+            var fl_id = $('#fl_id_s').combobox('getValue');
             //CreateFormPage( start_time +" - "+end_time + "生产线报警趋势报表", $("#gridTable"));
             $.ajax({
                 type: 'post',
@@ -644,7 +655,7 @@
                 async: false,
                 cache: false,
                 dataType: 'json',
-                data: { "start_time": "" + start_time + "", "end_time": "" + end_time + "", "method": "Print" },
+                data: { "fl_id": "" + fl_id + "", "start_time": "" + start_time + "", "end_time": "" + end_time + "", "method": "Print" },
                 cache: false,
                 success: function (data) {
                     if (data.Result == "true") {

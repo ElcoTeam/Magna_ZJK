@@ -34,7 +34,11 @@ namespace Bll
             return JSONTools.ScriptSerialize<List<mg_sys_log>>(result);
 
         }
-
+        public static string get_fl_listforTor()
+        {
+            List<object> result = mg_sys_LogDal.getfl_idListforTor();
+            return JSONTools.ScriptSerialize(result);
+        }
         public static string getfl_idList()
         {
             List<object> result = mg_sys_LogDal.getfl_idList();

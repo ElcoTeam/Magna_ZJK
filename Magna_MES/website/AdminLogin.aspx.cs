@@ -85,7 +85,7 @@ public partial class AdminCMS_AdminLogin : System.Web.UI.Page
 
             Response.Cookies.Add(cookie);
           FormsAuthentication.RedirectFromLoginPage(uid, false);
-           //Response.Redirect("AdminIndex.aspx");
+          // Response.Redirect("AdminIndex.aspx");
            //Response.End();
         }
         else 

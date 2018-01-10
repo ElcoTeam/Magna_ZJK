@@ -69,24 +69,27 @@
                             <li>
                                 <span>流水线</span>
                                 <div>
-                                    <select id="fl_id_s" class="easyui-combobox" style="width: 150px; height: 25px;"
+                                    <select id="fl_id_s" class="easyui-combobox uservalue" 
                                       data-options="valueField: 'fl_id',textField: 'fl_name',onChange:function(){reloadst_no_s();}">
+                                     <option value="">请选择</option>
                                     </select>
                                 </div>
                             </li>
                             <li>
                                 <span>工位</span>
                                 <div>
-                                    <select id="st_no_s" class="easyui-combobox" style="width: 150px; height: 25px;"
+                                    <select id="st_no_s" class="easyui-combobox uservalue" 
                                        data-options="valueField: 'st_no',textField: 'st_no',onChange:function(){reloadpart_id_s();}">
+                                     <option value="">请选择</option>
                                     </select>
                                 </div>
                             </li>
                             <li>
                                 <span>部件</span>
                                 <div>
-                                    <select id="part_id_s" class="easyui-combobox" style="width: 200px; height: 25px;"
+                                    <select id="part_id_s" class="easyui-combobox uservalue"
                                         data-options="valueField: 'part_no',textField: 'part_no'">
+                                     <option value="">请选择</option>
                                     </select>
                                 </div>
                             </li>
@@ -94,19 +97,19 @@
                                 <span>开始时间</span>
                                 <div>
                                     <%--<input id="start_time" class="easyui-datetimebox" data-options="showSeconds:false"/>--%>
-                                    <input id="start_time"  type="text" onclick="WdatePicker({ dateFmt: 'yyyy-MM-dd HH:mm:ss' })" class="Wdate" style="height:25px;" />
+                                    <input id="start_time"  type="text" onclick="WdatePicker({ dateFmt: 'yyyy-MM-dd HH:mm:ss' })" class="Wdate" />
                                 </div>
                             </li>
                             <li>
                                 <span>结束时间</span>
                                 <div>
                                     <%--<input id="end_time" class="easyui-datetimebox" data-options="showSeconds:false"/>--%>
-                                    <input id="end_time"  type="text" onclick="WdatePicker({ dateFmt: 'yyyy-MM-dd HH:mm:ss' })" class="Wdate" style="height:25px;" />
+                                    <input id="end_time"  type="text" onclick="WdatePicker({ dateFmt: 'yyyy-MM-dd HH:mm:ss' })" class="Wdate"  />
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <select id="data_type" class="easyui-combobox" style="width: 100px; height: 25px;"
+                                    <select id="data_type" class="easyui-combobox uservalue" 
                                         data-options="valueField: 'type_name',textField: 'type_name',onChange:function(){loadChart();}">
                                         <option value="扭矩" selected>扭矩</option>
                                         <option value="角度">角度</option>
@@ -141,33 +144,26 @@
                 echarts: '/js'
             }
         });
-        function setdate(day) {
-            var sd = new Date();
-            sd.setDate(sd.getDate() + day);
-            var sy = sd.getFullYear();
-            var sm = sd.getMonth() + 1;
-            var sdd = sd.getDate();
-            if (sm >= 1 && sm <= 9) {
-                sm = "0" + sm;
-            }
-            if (sdd >= 0 && sdd <= 9) {
-                sdd = "0" + sdd;
-            }
-
-            var ed = new Date();
-            ed.setDate(ed.getDate() + 1);
-            var ey = ed.getFullYear();
-            var em = ed.getMonth() + 1;
-            var edd = ed.getDate();
-            if (em >= 1 && em <= 9) {
-                em = "0" + em;
-            }
-            if (edd >= 0 && edd <= 9) {
-                edd = "0" + edd;
-            }
-            $("#startDate").val(sy + "-" + sm + "-" + sdd);
-            $("#endDate").val(ey + "-" + em + "-" + edd);
+        /**
+ * 
+ * 获取当前时间
+ */
+        function p(s) {
+            return s < 10 ? '0' + s : s;
         }
+
+        var myDate = new Date();
+        //获取当前年
+        var year = myDate.getFullYear();
+        //获取当前月
+        var month = myDate.getMonth() + 1;
+        //获取当前日
+        var date = myDate.getDate();
+        var h = myDate.getHours();       //获取当前小时数(0-23)
+        var m = myDate.getMinutes();     //获取当前分钟数(0-59)
+        var s = myDate.getSeconds();
+
+        var now = year + '-' + p(month) + "-" + p(date) + " " + p(h) + ':' + p(m) + ":" + p(s);
         function today() {
             var today = new Date();
             var h = today.getFullYear();
@@ -179,8 +175,8 @@
         }
         $(function () {
           
-            $('#start_time').val(today());
-            $('#end_time').val(today());
+            $('#start_time').val(now);
+            $('#end_time').val(now);
             require(
 							[
 									'echarts',
@@ -220,6 +216,14 @@
             var chart_Type = $('#data_type').combo('getValue');
             var starttime = $('#start_time').val().trim();
             var endtime = $('#end_time').val().trim();
+            if (fl_id == "" || st_no == "" || part_no == "") {
+                alert("请选择流水线，工位以及部件");
+                return false;
+            }
+            if (fl_id == "请选择" || st_no == "请选择" || part_no == "请选择") {
+                alert("请选择流水线，工位以及部件");
+                return false;
+            }
 
             $.ajax({
                 type: 'get',
@@ -367,27 +371,36 @@
         function reloadfl_id_s() {
            
             $('#fl_id_s').combobox({
-                    url: '/HttpHandlers/TorqueReporterHandler.ashx?method=get_fl_list',
+                    url: '/HttpHandlers/TorqueReporterHandler.ashx?method=get_fl_listforTor',
                     method: "post",
                    valueField: 'fl_id',
                    textField: 'fl_name',
                    onChange: function(){
                        reloadst_no_s();
                         },
-                    onLoadSuccess: function () {
-                        var data = $(this).combobox("getData");
-                        if (data.length > 0) {
-                            $('#fl_id_s').combobox('select', data[0].fl_id);
+                   onLoadSuccess: function () {
+                       $('#fl_id_s').combobox('setValue', '请选择');
+                        //var data = $(this).combobox("getData");
+                        //if (data.length > 0) {
+                        //    $('#fl_id_s').combobox('select', data[0].fl_id);
                           
-                        }
+                        //}
                     }
                 });
             
         }
 
         function reloadst_no_s() {
-            $('#st_no_s').combobox('clear');
+         
             var fl_id = $('#fl_id_s').combobox('getValue');
+            if (fl_id == "") {
+
+                return false;
+            }
+            if (fl_id == "请选择") {
+
+                return false;
+            }
             $('#st_no_s').combobox({
                 url: '/HttpHandlers/TorqueReporterHandler.ashx?method=get_st_listforTorque&fl_id=' + fl_id,
                 method: "post",
@@ -397,17 +410,25 @@
                     reloadpart_id_s();
                 },
                 onLoadSuccess: function () {
-                    var data = $(this).combobox("getData");
-                    if (data.length > 0) {
-                        $('#st_no_s').combobox('select', data[0].st_no);
+                    //var data = $(this).combobox("getData");
+                    //if (data.length > 0) {
+                    //    $('#st_no_s').combobox('select', data[0].st_no);
                        
-                    }
+                    //}
                 }
             });
         }
 
         function reloadpart_id_s() {
-            $('#part_id_s').combobox('clear');
+            if (fl_id == "" || st_no == "") {
+
+                return false;
+            }
+            if (fl_id == "请选择" || st_no == "请选择") {
+
+                return false;
+            }
+           
             var fl_id = $('#fl_id_s').combobox('getValue');
             var st_no = $('#st_no_s').combobox('getValue');
             $('#part_id_s').combobox({
@@ -416,11 +437,11 @@
                 valueField: 'part_no',
                 textField: 'part_no',
                 onLoadSuccess: function () {
-                    var data = $(this).combobox("getData");
-                    if (data.length > 0) {
-                        $('#part_id_s').combobox('select', data[0].part_no);
+                    //var data = $(this).combobox("getData");
+                    //if (data.length > 0) {
+                    //    $('#part_id_s').combobox('select', data[0].part_no);
                    
-                    }
+                    //}
                     
                 }
             });
