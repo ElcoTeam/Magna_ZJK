@@ -204,6 +204,11 @@ namespace Dal
     LEFT JOIN dbo.View_mg_sys_log b on f.fl_id = b.fl_id 
 	where b.AngleResult!='' order by f.fl_id ";      //有fl_id，fl_name两个字段
             DataTable table = SqlHelper.GetDataDataTable(SqlHelper.SqlConnString, CommandType.Text, sql, null);
+            result.Add(new
+            {
+                fl_id = "",
+                fl_name = "请选择"
+            });
             foreach (DataRow row in table.Rows)
             {
                 result.Add(new
@@ -267,6 +272,11 @@ namespace Dal
                 parameters = null;
             }
             DataTable table = SqlHelper.GetDataDataTable(SqlHelper.SqlConnString, CommandType.Text, sql, parameters);
+            result.Add(new
+            {
+                // st_id = row["st_id"],
+                st_no = "请选择"
+            });
             foreach (DataRow row in table.Rows)
             {
                 result.Add(new
@@ -423,6 +433,10 @@ namespace Dal
                     parameters.Add(new SqlParameter("@st_no", SqlDbType.NVarChar) { Value = st_no });
                 }
             DataTable table = SqlHelper.GetDataDataTable(SqlHelper.SqlConnString, CommandType.Text, sql.ToString(), parameters.ToArray());
+            result.Add(new
+            {
+                part_no = "请选择"
+            });
             foreach (DataRow row in table.Rows)
             {
                 result.Add(new
