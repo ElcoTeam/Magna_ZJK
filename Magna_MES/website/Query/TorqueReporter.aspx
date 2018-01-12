@@ -199,7 +199,7 @@
              //reloadst_no_s();
             //reloadpart_id_s();
 
-            setTimeout(loadChart, 1000); 
+            //setTimeout(loadChart, 1000); 
             
            
         });
@@ -379,7 +379,7 @@
                        reloadst_no_s();
                         },
                    onLoadSuccess: function () {
-                       $('#fl_id_s').combobox('setValue', '请选择');
+                      // $('#fl_id_s').combobox('setValue', '请选择');
                         //var data = $(this).combobox("getData");
                         //if (data.length > 0) {
                         //    $('#fl_id_s').combobox('select', data[0].fl_id);
