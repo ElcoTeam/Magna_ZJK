@@ -13,7 +13,7 @@ namespace DAL
         public static int AddflByName(string classesname, string starttime, string endtime)
         {
             string maxidSql = @"declare @i int;
-                                SELECT @i=max([cl_id])  FROM [Sys_classes];
+                                SELECT @i=max([cl_id])  FROM [mg_classes];
                                 if @i is null
                                     begin
                                         set @i=1
@@ -22,25 +22,25 @@ namespace DAL
                                     begin
                                         set @i=@i+1
                                     end;";
-            string sql = @"INSERT INTO [Sys_classes] ([cl_id],[cl_name],[cl_starttime],[cl_endtime]) VALUES (@i,'" + classesname + "','" + starttime + "','" + endtime + "')";
+            string sql = @"INSERT INTO [mg_classes] ([cl_id],[cl_name],[cl_starttime],[cl_endtime]) VALUES (@i,'" + classesname + "','" + starttime + "','" + endtime + "')";
             return SqlHelper.ExecuteNonQuery(SqlHelper.SqlConnString, CommandType.Text, maxidSql+sql, null);
         }
 
         public static DataTable GetAllData()
         {
-            string sql = @"select * from [Sys_classes] order by [cl_id]";
+            string sql = @"select * from [mg_classes] order by [cl_id]";
             return SqlHelper.GetDataDataTable(SqlHelper.SqlConnString, CommandType.Text, sql, null);
         }
 
         public static int UpDateflByName(int cl_id, string cl_name, string stime, string etime)
         {
-            string sql = @"update [Sys_classes] set cl_name='" + cl_name + "',cl_starttime='" + stime + "',cl_endtime='" + etime + "' where cl_id=" + cl_id;
+            string sql = @"update [mg_classes] set cl_name='" + cl_name + "',cl_starttime='" + stime + "',cl_endtime='" + etime + "' where cl_id=" + cl_id;
             return SqlHelper.ExecuteNonQuery(SqlHelper.SqlConnString, CommandType.Text, sql, null);
         }
 
         public static int DelflByName(int fl_id)
         {
-            string sql = @"delete from [Sys_classes] where cl_id=" + fl_id;
+            string sql = @"delete from [mg_classes] where cl_id=" + fl_id;
             return SqlHelper.ExecuteNonQuery(SqlHelper.SqlConnString, CommandType.Text, sql, null);
         }
 
@@ -51,11 +51,11 @@ namespace DAL
             int i;
             if (a == 1)
             {
-                sql = @"select * from [Sys_classes] where cl_name='" + classesname + "'";
+                sql = @"select * from [mg_classes] where cl_name='" + classesname + "'";
             }
             if (a == 2)
             {
-                sql = @"select * from [Sys_classes] where cl_name='" + classesname + "' and cl_id <>" + classesid;
+                sql = @"select * from [mg_classes] where cl_name='" + classesname + "' and cl_id <>" + classesid;
             }
             tb = SqlHelper.GetDataDataTable(SqlHelper.SqlConnString, CommandType.Text, sql, null);
             if (tb.Rows.Count != 0)

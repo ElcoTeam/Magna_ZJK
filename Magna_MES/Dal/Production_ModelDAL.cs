@@ -387,7 +387,7 @@ namespace Dal
         public static DataTable GetClassInfo()
         {
             DataTable tb = new DataTable();
-            string sql = @"SELECT  distinct [cl_id], [cl_name] FROM [sys_classes] where 1=1 ";
+            string sql = @"SELECT  distinct [cl_id], [cl_name] FROM [mg_classes] where 1=1 ";
             tb = SqlHelper.GetDataDataTable(SqlHelper.SqlConnString, CommandType.Text, sql, null);         
             return tb;
         }
