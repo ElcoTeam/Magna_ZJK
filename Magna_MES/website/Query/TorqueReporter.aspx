@@ -70,7 +70,7 @@
                                 <span>流水线</span>
                                 <div>
                                     <select id="fl_id_s" class="easyui-combobox uservalue" 
-                                      data-options="valueField: 'fl_id',textField: 'fl_name',onChange:function(){reloadst_no_s();}">
+                                      data-options="valueField: 'fl_id',textField: 'fl_name'">
                                      <option value="">请选择</option>
                                     </select>
                                 </div>
@@ -79,7 +79,7 @@
                                 <span>工位</span>
                                 <div>
                                     <select id="st_no_s" class="easyui-combobox uservalue" 
-                                       data-options="valueField: 'st_no',textField: 'st_no',onChange:function(){reloadpart_id_s();}">
+                                       data-options="valueField: 'st_no',textField: 'st_no'">
                                      <option value="">请选择</option>
                                     </select>
                                 </div>
@@ -210,10 +210,10 @@
              //    effect:'whirling'
              //});
             
-            var fl_id = $('#fl_id_s').combo('getValue');
-            var st_no = $('#st_no_s').combo('getValue');
-            var part_no = $('#part_id_s').combo('getValue');
-            var chart_Type = $('#data_type').combo('getValue');
+            var fl_id = $('#fl_id_s').combobox('getValue');
+            var st_no = $('#st_no_s').combobox('getValue');
+            var part_no = $('#part_id_s').combobox('getValue');
+            var chart_Type = $('#data_type').combobox('getValue');
             var starttime = $('#start_time').val().trim();
             var endtime = $('#end_time').val().trim();
             if (fl_id == "" || st_no == "" || part_no == "") {
@@ -421,6 +421,8 @@
 
         function reloadpart_id_s() {
             $('#part_id_s').combobox('loadData', {});
+            var fl_id = $('#fl_id_s').combobox('getValue');
+            var st_no = $('#st_no_s').combobox('getValue');
             if (fl_id == "" || st_no == "") {
                 $('#part_id_s').combobox('setValue', '请选择');
                 return false;
@@ -430,8 +432,6 @@
                 return false;
             }
            
-            var fl_id = $('#fl_id_s').combobox('getValue');
-            var st_no = $('#st_no_s').combobox('getValue');
             $('#part_id_s').combobox({
                 url: '/HttpHandlers/TorqueReporterHandler.ashx?method=get_part_list&fl_id=' + fl_id + '&st_no=' + st_no,
                 method: "post",

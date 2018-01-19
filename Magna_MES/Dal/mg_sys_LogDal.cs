@@ -201,8 +201,7 @@ namespace Dal
         {
             List<object> result = new List<object>();
             string sql = @" select distinct f.fl_id ,f.fl_name  from mg_FlowLine f
-    LEFT JOIN dbo.View_mg_sys_log b on f.fl_id = b.fl_id 
-	where b.AngleResult!='' order by f.fl_id ";      //有fl_id，fl_name两个字段
+            order by f.fl_id ";      //有fl_id，fl_name两个字段
             DataTable table = SqlHelper.GetDataDataTable(SqlHelper.SqlConnString, CommandType.Text, sql, null);
             result.Add(new
             {
@@ -232,12 +231,12 @@ namespace Dal
             //string sql = "select distinct st_id, st_no from dbo.mg_sys_log where fl_id=@fl_id and len(AngleResult) > 0";
             if (!string.IsNullOrEmpty(fl_id))
             {
-                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station LEFT JOIN dbo.View_mg_sys_log b ON dbo.mg_station.st_no=b.st_no    where dbo.mg_station.fl_id=@fl_id  and len(b.AngleResult) > 0 order by dbo.mg_station.st_no";
+                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station     where dbo.mg_station.fl_id=@fl_id   order by dbo.mg_station.st_no";
                  parameters = new SqlParameter[] { new SqlParameter("@fl_id", SqlDbType.NVarChar) { Value = fl_id } };
             }
             else
             {
-                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station LEFT JOIN dbo.View_mg_sys_log b ON dbo.mg_station.st_no=b.st_no where 1=1 and len(b.AngleResult) > 0 order by dbo.mg_station.st_no";
+                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station  where 1=1  order by dbo.mg_station.st_no";
                  parameters = null;
             }
             DataTable table = SqlHelper.GetDataDataTable(SqlHelper.SqlConnString, CommandType.Text, sql, parameters);
@@ -263,12 +262,12 @@ namespace Dal
             //string sql = "select distinct st_id, st_no from dbo.mg_sys_log where fl_id=@fl_id and len(AngleResult) > 0";
             if (!string.IsNullOrEmpty(fl_id))
             {
-                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station LEFT JOIN dbo.View_mg_sys_log b ON dbo.mg_station.st_no=b.st_no    where dbo.mg_station.fl_id=@fl_id and b.AngleResult!='' order by dbo.mg_station.st_no";
+                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station     where dbo.mg_station.fl_id=@fl_id  order by dbo.mg_station.st_no";
                 parameters = new SqlParameter[] { new SqlParameter("@fl_id", SqlDbType.NVarChar) { Value = fl_id } };
             }
             else
             {
-                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station LEFT JOIN dbo.View_mg_sys_log b ON dbo.mg_station.st_no=b.st_no where 1=1  and  b.AngleResult!='' order by dbo.mg_station.st_no";
+                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station  where 1=1   order by dbo.mg_station.st_no";
                 parameters = null;
             }
             DataTable table = SqlHelper.GetDataDataTable(SqlHelper.SqlConnString, CommandType.Text, sql, parameters);
@@ -299,12 +298,12 @@ namespace Dal
             //string sql = "select distinct st_id, st_no from dbo.mg_sys_log where fl_id=@fl_id and len(AngleResult) > 0";
             if (!string.IsNullOrEmpty(fl_id))
             {
-                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station LEFT JOIN dbo.View_mg_sys_log b ON dbo.mg_station.st_no=b.st_no    where dbo.mg_station.fl_id=@fl_id  order by dbo.mg_station.st_no";
+                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station     where dbo.mg_station.fl_id=@fl_id  order by dbo.mg_station.st_no";
                 parameters = new SqlParameter[] { new SqlParameter("@fl_id", SqlDbType.NVarChar) { Value = fl_id } };
             }
             else
             {
-                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station LEFT JOIN dbo.View_mg_sys_log b ON dbo.mg_station.st_no=b.st_no where 1=1 order by dbo.mg_station.st_no";
+                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station  where 1=1 order by dbo.mg_station.st_no";
                 parameters = null;
             }
             DataTable table = SqlHelper.GetDataDataTable(SqlHelper.SqlConnString, CommandType.Text, sql, parameters);
@@ -330,12 +329,12 @@ namespace Dal
             //string sql = "select distinct st_id, st_no from dbo.mg_sys_log where fl_id=@fl_id and len(AngleResult) > 0";
             if (!string.IsNullOrEmpty(fl_id))
             {
-                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station LEFT JOIN dbo.View_mg_sys_log b ON dbo.mg_station.st_no=b.st_no    where dbo.mg_station.fl_id=@fl_id  order by dbo.mg_station.st_no";
+                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station     where dbo.mg_station.fl_id=@fl_id  order by dbo.mg_station.st_no";
                 parameters = new SqlParameter[] { new SqlParameter("@fl_id", SqlDbType.NVarChar) { Value = fl_id } };
             }
             else
             {
-                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station LEFT JOIN dbo.View_mg_sys_log b ON dbo.mg_station.st_no=b.st_no where 1=1 order by dbo.mg_station.st_no";
+                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station  where 1=1 order by dbo.mg_station.st_no";
                 parameters = null;
             }
             DataTable table = SqlHelper.GetDataDataTable(SqlHelper.SqlConnString, CommandType.Text, sql, parameters);
@@ -362,12 +361,12 @@ namespace Dal
             //string sql = "select distinct st_id, st_no from dbo.mg_sys_log where fl_id=@fl_id and len(AngleResult) > 0";
             if (!string.IsNullOrEmpty(fl_id))
             {
-                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station LEFT JOIN dbo.View_mg_sys_log b ON dbo.mg_station.st_no=b.st_no    where dbo.mg_station.fl_id=@fl_id  order by dbo.mg_station.st_no";
+                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station     where dbo.mg_station.fl_id=@fl_id  order by dbo.mg_station.st_no";
                 parameters = new SqlParameter[] { new SqlParameter("@fl_id", SqlDbType.NVarChar) { Value = fl_id } };
             }
             else
             {
-                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station LEFT JOIN dbo.View_mg_sys_log b ON dbo.mg_station.st_no=b.st_no where 1=1 order by dbo.mg_station.st_no";
+                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station  where 1=1 order by dbo.mg_station.st_no";
                 parameters = null;
             }
             DataTable table = SqlHelper.GetDataDataTable(SqlHelper.SqlConnString, CommandType.Text, sql, parameters);
@@ -393,12 +392,12 @@ namespace Dal
             //string sql = "select distinct st_id, st_no from dbo.mg_sys_log where fl_id=@fl_id and len(AngleResult) > 0";
             if (!string.IsNullOrEmpty(fl_id))
             {
-                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station LEFT JOIN dbo.View_mg_sys_log b ON dbo.mg_station.st_no=b.st_no    where dbo.mg_station.fl_id=@fl_id  order by dbo.mg_station.st_no";
+                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station    where dbo.mg_station.fl_id=@fl_id  order by dbo.mg_station.st_no";
                 parameters = new SqlParameter[] { new SqlParameter("@fl_id", SqlDbType.NVarChar) { Value = fl_id } };
             }
             else
             {
-                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station LEFT JOIN dbo.View_mg_sys_log b ON dbo.mg_station.st_no=b.st_no where 1=1 order by dbo.mg_station.st_no";
+                sql = "select distinct dbo.mg_station.st_no from dbo.mg_station  where 1=1 order by dbo.mg_station.st_no";
                 parameters = null;
             }
             DataTable table = SqlHelper.GetDataDataTable(SqlHelper.SqlConnString, CommandType.Text, sql, parameters);
@@ -419,19 +418,15 @@ namespace Dal
         public static List<object> getpart_idList(string fl_id, string st_no)
         {
             List<object> result = new List<object>();
-            StringBuilder sql = new StringBuilder(@"select distinct part_no from dbo.View_mg_sys_log where 1=1 and b.AngleResult!='' ");
+            StringBuilder sql = new StringBuilder(@"select distinct part_no from mg_part where 1=1  ");
             List<SqlParameter> parameters = new List<SqlParameter>();
 
                 if (string.IsNullOrEmpty(fl_id) == false)
                 {
-                    sql.Append(" and fl_id=@fl_id");
+                    sql.Append(" and FlowLineID=@fl_id");
                     parameters.Add(new SqlParameter("@fl_id", SqlDbType.NVarChar) { Value = fl_id });
                 }
-                if (string.IsNullOrEmpty(st_no) == false)
-                {
-                    sql.Append(" and st_no=@st_no");
-                    parameters.Add(new SqlParameter("@st_no", SqlDbType.NVarChar) { Value = st_no });
-                }
+                
             DataTable table = SqlHelper.GetDataDataTable(SqlHelper.SqlConnString, CommandType.Text, sql.ToString(), parameters.ToArray());
             result.Add(new
             {
