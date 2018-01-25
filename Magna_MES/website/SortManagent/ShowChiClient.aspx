@@ -115,7 +115,7 @@
     </table>
      
        <!-- 编辑窗口 -->
-    <div id="w" style="padding: 10px; visibility: hidden" title="整车座椅编辑">
+    <div id="w" style="padding: 10px; visibility: hidden" title="手持仪配置管理">
         <table cellpadding="0" cellspacing="0">
 
             <tr>

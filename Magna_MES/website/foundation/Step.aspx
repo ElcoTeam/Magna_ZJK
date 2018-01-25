@@ -35,15 +35,15 @@
 				</td>
 				<td></td>
 				<td style="width: 150px;">
-					<select id="fl_id_s" class="easyui-combobox" style="width: 200px; height: 25px;"
+					<select id="fl_id_s" class="easyui-combobox" style="width: 150px; height: 25px;"
 						data-options="valueField: 'fl_id',textField: 'fl_name',onChange:reloadst_id_s">
 					</select></td>
 				<td style="width: 150px;">
-					<select id="st_id_s" class="easyui-combobox" style="width: 200px; height: 25px;"
+					<select id="st_id_s" class="easyui-combobox" style="width: 150px; height: 25px;"
 						data-options="valueField: 'st_id',textField: 'st_no',onChange:reloadpart_id_s">
 					</select></td>
 				<td style="width: 150px;">
-					<select id="part_id_s" class="easyui-combobox" style="width: 250px; height: 25px;"
+					<select id="part_id_s" class="easyui-combobox" style="width: 150px; height: 25px;"
 						data-options="valueField: 'part_id',textField: 'part_no'">
 					</select></td>
 				<td style="width: 120px;"><a class="topsearchBtn">筛选步骤</a></td>

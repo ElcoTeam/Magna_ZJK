@@ -124,12 +124,12 @@ namespace DAL
                                 ";
             StringBuilder strSql = new StringBuilder();
             strSql.Append("insert into mg_step(");
-            strSql.Append("step_id,step_name,fl_id,st_id,bom_id,bom_count,step_clock,step_desc,step_pic,step_plccode,step_order,part_id)");
+            strSql.Append("step_id,step_name,st_id,bom_id,bom_count,step_clock,step_desc,step_pic,step_plccode,step_order,part_id)");
             strSql.Append(" values (");
-            strSql.Append("@i,@step_name,@fl_id,@st_id,@bom_id,@bom_count,@step_clock,@step_desc,@step_pic,@step_plccode,@o,@part_id);");
+            strSql.Append("@i,@step_name,@st_id,@bom_id,@bom_count,@step_clock,@step_desc,@step_pic,@step_plccode,@o,@part_id);");
             SqlParameter[] parameters = {
 					new SqlParameter("@step_name", SqlDbType.NVarChar),
-					new SqlParameter("@fl_id", SqlDbType.Int),
+					//new SqlParameter("@fl_id", SqlDbType.Int),
 					new SqlParameter("@st_id", SqlDbType.Int),
 					new SqlParameter("@bom_id", SqlDbType.Int),
 					new SqlParameter("@bom_count", SqlDbType.Int),
@@ -140,15 +140,15 @@ namespace DAL
 					new SqlParameter("@part_id", SqlDbType.Int)
                                         };
             parameters[0].Value = model.step_name;
-            parameters[1].Value = model.fl_id;
-            parameters[2].Value = model.st_id;
-            parameters[3].Value = model.bom_id;
-            parameters[4].Value = model.bom_count;
-            parameters[5].Value = model.step_clock;
-            parameters[6].Value = model.step_desc;
-            parameters[7].Value = model.step_pic;
-            parameters[8].Value = model.step_plccode;
-            parameters[9].Value = model.part_id;
+          //  parameters[1].Value = model.fl_id;
+            parameters[1].Value = model.st_id;
+            parameters[2].Value = model.bom_id;
+            parameters[3].Value = model.bom_count;
+            parameters[4].Value = model.step_clock;
+            parameters[5].Value = model.step_desc;
+            parameters[6].Value = model.step_pic;
+            parameters[7].Value = model.step_plccode;
+            parameters[8].Value = model.part_id;
 
             if (!string.IsNullOrEmpty(model.odsName))
             {
@@ -204,12 +204,12 @@ namespace DAL
                                 ";
             StringBuilder strSql = new StringBuilder();
             strSql.Append("insert into mg_step(");
-            strSql.Append("step_id,step_name,fl_id,st_id,bom_id,bom_count,step_clock,step_desc,step_pic,step_plccode,step_order,part_id,barcode_start,barcode_number)");
+            strSql.Append("step_id,step_name,st_id,bom_id,bom_count,step_clock,step_desc,step_pic,step_plccode,step_order,part_id,barcode_start,barcode_number)");
             strSql.Append(" values (");
-            strSql.Append("@i,@step_name,@fl_id,@st_id,@bom_id,@bom_count,@step_clock,@step_desc,@step_pic,@step_plccode,@o,@part_id,@barcode_start,@barcode_number)");
+            strSql.Append("@i,@step_name,@st_id,@bom_id,@bom_count,@step_clock,@step_desc,@step_pic,@step_plccode,@o,@part_id,@barcode_start,@barcode_number)");
             SqlParameter[] parameters = {
 					new SqlParameter("@step_name", SqlDbType.NVarChar),
-					new SqlParameter("@fl_id", SqlDbType.Int),
+                    //new SqlParameter("@fl_id", SqlDbType.Int),
 					new SqlParameter("@st_id", SqlDbType.Int),
 					new SqlParameter("@bom_id", SqlDbType.Int),
 					new SqlParameter("@bom_count", SqlDbType.Int),
@@ -222,17 +222,17 @@ namespace DAL
 					new SqlParameter("@part_id", SqlDbType.Int)
                                         };
             parameters[0].Value = model.step_name;
-            parameters[1].Value = model.fl_id;
-            parameters[2].Value = model.st_id;
-            parameters[3].Value = model.bom_id;
-            parameters[4].Value = model.bom_count;
-            parameters[5].Value = model.step_clock;
-            parameters[6].Value = model.step_desc;
-            parameters[7].Value = model.step_pic;
-            parameters[8].Value = model.step_plccode;
-            parameters[9].Value = model.barcode_start;
-            parameters[10].Value = model.barcode_number;
-            parameters[11].Value = model.part_id;
+            //parameters[1].Value = model.fl_id;
+            parameters[1].Value = model.st_id;
+            parameters[2].Value = model.bom_id;
+            parameters[3].Value = model.bom_count;
+            parameters[4].Value = model.step_clock;
+            parameters[5].Value = model.step_desc;
+            parameters[6].Value = model.step_pic;
+            parameters[7].Value = model.step_plccode;
+            parameters[8].Value = model.barcode_start;
+            parameters[9].Value = model.barcode_number;
+            parameters[10].Value = model.part_id;
 
 
             int rows = SqlHelper.ExecuteNonQuery(SqlHelper.SqlConnString, System.Data.CommandType.Text, maxid + strSql, parameters);
@@ -244,7 +244,7 @@ namespace DAL
             StringBuilder strSql = new StringBuilder();
             strSql.Append("update mg_step set ");
             strSql.Append("step_name=@step_name,");
-            strSql.Append("fl_id=@fl_id,");
+           // strSql.Append("fl_id=@fl_id,");
             strSql.Append("st_id=@st_id,");
             strSql.Append("bom_id=@bom_id,");
             strSql.Append("part_id=@part_id,");
@@ -257,7 +257,7 @@ namespace DAL
             SqlParameter[] parameters = {
 					new SqlParameter("@step_id", SqlDbType.Int),
 					new SqlParameter("@step_name", SqlDbType.NVarChar),
-					new SqlParameter("@fl_id", SqlDbType.Int),
+					//new SqlParameter("@fl_id", SqlDbType.Int),
 					new SqlParameter("@st_id", SqlDbType.Int),
 					new SqlParameter("@bom_id", SqlDbType.Int),
 					new SqlParameter("@bom_count", SqlDbType.Int),
@@ -269,15 +269,15 @@ namespace DAL
                                         };
             parameters[0].Value = model.step_id;
             parameters[1].Value = model.step_name;
-            parameters[2].Value = model.fl_id;
-            parameters[3].Value = model.st_id;
-            parameters[4].Value = model.bom_id;
-            parameters[5].Value = model.bom_count;
-            parameters[6].Value = model.step_clock;
-            parameters[7].Value = model.step_desc;
-            parameters[8].Value = model.step_pic;
-            parameters[9].Value = model.step_plccode;
-            parameters[10].Value = model.part_id;
+          //  parameters[2].Value = model.fl_id;
+            parameters[2].Value = model.st_id;
+            parameters[3].Value = model.bom_id;
+            parameters[4].Value = model.bom_count;
+            parameters[5].Value = model.step_clock;
+            parameters[6].Value = model.step_desc;
+            parameters[7].Value = model.step_pic;
+            parameters[8].Value = model.step_plccode;
+            parameters[9].Value = model.part_id;
 
 
             if (!string.IsNullOrEmpty(model.odsName))
@@ -315,7 +315,7 @@ namespace DAL
             StringBuilder strSql = new StringBuilder();
             strSql.Append("update mg_step set ");
             strSql.Append("step_name=@step_name,");
-            strSql.Append("fl_id=@fl_id,");
+            //strSql.Append("fl_id=@fl_id,");
             strSql.Append("st_id=@st_id,");
             strSql.Append("bom_id=@bom_id,");
             strSql.Append("part_id=@part_id,");
@@ -330,7 +330,7 @@ namespace DAL
             SqlParameter[] parameters = {
 					new SqlParameter("@step_id", SqlDbType.Int),
 					new SqlParameter("@step_name", SqlDbType.NVarChar),
-					new SqlParameter("@fl_id", SqlDbType.Int),
+                    //new SqlParameter("@fl_id", SqlDbType.Int),
 					new SqlParameter("@st_id", SqlDbType.Int),
 					new SqlParameter("@bom_id", SqlDbType.Int),
 					new SqlParameter("@bom_count", SqlDbType.Int),
@@ -344,17 +344,17 @@ namespace DAL
                                         };
             parameters[0].Value = model.step_id;
             parameters[1].Value = model.step_name;
-            parameters[2].Value = model.fl_id;
-            parameters[3].Value = model.st_id;
-            parameters[4].Value = model.bom_id;
-            parameters[5].Value = model.bom_count;
-            parameters[6].Value = model.step_clock;
-            parameters[7].Value = model.step_desc;
-            parameters[8].Value = model.step_pic;
-            parameters[9].Value = model.step_plccode;
-            parameters[10].Value = model.barcode_start;
-            parameters[11].Value = model.barcode_number;
-            parameters[12].Value = model.part_id;
+            //parameters[2].Value = model.fl_id;
+            parameters[2].Value = model.st_id;
+            parameters[3].Value = model.bom_id;
+            parameters[4].Value = model.bom_count;
+            parameters[5].Value = model.step_clock;
+            parameters[6].Value = model.step_desc;
+            parameters[7].Value = model.step_pic;
+            parameters[8].Value = model.step_plccode;
+            parameters[9].Value = model.barcode_start;
+            parameters[10].Value = model.barcode_number;
+            parameters[11].Value = model.part_id;
 
             int rows = SqlHelper.ExecuteNonQuery(SqlHelper.SqlConnString, System.Data.CommandType.Text, strSql.ToString(), parameters);
             return rows;
@@ -366,10 +366,10 @@ namespace DAL
         {
             total = "0";
             List<mg_StepModel> list = null;
-            string queryStr = (!string.IsNullOrEmpty(fl_id) && fl_id != "0") ? " where step.fl_id=" + fl_id : " where step.step_id is not null ";
+            string queryStr = (!string.IsNullOrEmpty(fl_id) && fl_id != "0") ? " where st.fl_id=" + fl_id : " where step.step_id is not null ";
             queryStr += (!string.IsNullOrEmpty(st_id) && st_id != "0") ? " and step.st_id=" + st_id : " ";
             queryStr += (!string.IsNullOrEmpty(part_id) && part_id != "0") ? " and step.part_id=" + part_id : " ";
-            string sql1 = @"select count(step_id) total from [mg_step] step " + queryStr + @" ;";
+            string sql1 = @"select count(step_id) total from [mg_step] step left join mg_station st on step.st_id = st.st_id " + queryStr + @" ;";
             string sql2 = @" 
                            select  top " + pagesize + @" A.*
                                        
@@ -441,7 +441,7 @@ namespace DAL
 
         public static int DeleteStep(string step_id)
         {
-            string sql = @"delete from [mg_step] where [step_id]=" + step_id + "; delete from mg_ODS where step_id=" + step_id + ";";
+            string sql = @"delete from [mg_step] where [step_id]=" + step_id + "; ";
             return SqlHelper.ExecuteNonQuery(SqlHelper.SqlConnString, CommandType.Text, sql, null);
         }
 
@@ -466,7 +466,7 @@ namespace DAL
                             with data as
                             (
                             SELECT 
-                                  step.[fl_id]
+                                  st.[fl_id]
 	                              ,fl.fl_name
 
 	                             ,prop.Prop_type
@@ -532,7 +532,7 @@ namespace DAL
             string sql = @" with data as
                             (
                             SELECT 
-                                  step.[fl_id]
+                                  st.[fl_id]
 	                              ,fl.fl_name
 
 	                             ,prop.Prop_type
@@ -574,7 +574,7 @@ namespace DAL
 								  end Step_matchResult
 
                               FROM [mg_step] step
-                              left join mg_FlowLine fl on step.fl_id = fl.fl_id
+                              left join mg_FlowLine fl on st.fl_id = fl.fl_id
                               left join mg_station st on st.st_id=step.st_id
                               left join mg_part p on p.part_id=step.part_id
                               left join mg_Property prop on prop.prop_id = p.part_categoryid
@@ -594,7 +594,7 @@ namespace DAL
             string sql = @" with data as
                             (
                             SELECT 
-                                  step.[fl_id]
+                                  st.[fl_id]
 	                              ,fl.fl_name
 
 	                             ,prop.Prop_type

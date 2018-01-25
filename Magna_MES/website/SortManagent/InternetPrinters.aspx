@@ -92,7 +92,7 @@
     <div class="top">
         <table cellpadding="0" cellspacing="0" style="width: 100%">
             <tr>
-                <td><span class="title">手持仪配置管理</span> <%--<span class="subDesc">拖拽数据进行排序</span>--%>
+                <td><span class="title">网络打印机配置管理</span> <%--<span class="subDesc">拖拽数据进行排序</span>--%>
                 </td>
                 <td style="width: 120px">
                     <a class="topaddBtn">新增配置</a>
@@ -108,17 +108,17 @@
     </div>
     
      <!-- 数据表格  -->
-    <table id="tb" title="手持仪配置管理" style="width: 99%;">
+    <table id="tb" title="打印机配置管理" style="width: 99%;">
     </table>
      
        <!-- 编辑窗口 -->
-    <div id="w" style="padding: 10px; visibility: hidden" title="整车座椅编辑">
+    <div id="w" style="padding: 10px; visibility: hidden" title="打印机配置管理">
         <table cellpadding="0" cellspacing="0">
 
             <tr>
                 <td class="title">
                     <p>
-                        手持端名称 ：
+                        打印机名称 ：
                     </p>
                 </td>
                 <td>
@@ -128,7 +128,7 @@
             <tr>
                 <td class="title" style="width: 110px;">
                     <p>
-                        手持端IP ：
+                        打印机IP ：
                     </p>
                 </td>
                 <td>
@@ -139,7 +139,7 @@
              <tr>
                 <td class="title" style="width: 110px;">
                     <p>
-                        手持端权限 ：
+                        打印机权限 ：
                     </p>
                 </td>
                 <td id="role">                   

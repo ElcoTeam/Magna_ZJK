@@ -221,6 +221,7 @@
                 data: encodeURI("CustomerOrderID=" + row.OrderID + "&method=delete"),
                 async: false,
                 success: function (data) {
+                  
                     if (data == 'true') {
                         alert('已删除');
                         $('#CustomOrder').datagrid('reload');
