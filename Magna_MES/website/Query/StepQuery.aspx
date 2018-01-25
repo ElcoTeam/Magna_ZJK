@@ -190,6 +190,7 @@
                 fitColumns: true,
                 sortName: "st_no, step_startTime",
                 sortOrder: "asc",
+                emptyMsg: "<span>没有找到相关记录</span>",
                 queryParams:
                     {
                         fl_name: fl_name,
@@ -200,6 +201,7 @@
                         OrderId: orderid,
                         method:""
                     },
+                emptyMsg: "<span>没有找到相关记录</span>",
                 columns: [[ //数据表格列配置对象，查看列属性以获取更多细节
 							{ field: 'sys_id', title: 'id', hidden: true },
 							{ field: 'fl_id', title: '流水线id', hidden: true },
@@ -494,6 +496,10 @@
         function reloadst_id_s() {
             $('#st_id_s').combobox('loadData', {});
             var fl_id = $('#fl_id_s').combobox('getValue');
+            if (fl_id == "请选择")
+            {
+                fl_id = "";
+            }
             $('#st_id_s').combobox({
                 url: '/HttpHandlers/TorqueReporterHandler.ashx?method=get_st_listForStep&fl_id=' + fl_id,
                 method: "post",
@@ -516,6 +522,12 @@
             $('#part_id_s').combobox('loadData', {});
             var fl_id = $('#fl_id_s').combobox('getValue');
             var st_no = $('#st_id_s').combobox('getValue');
+            if (fl_id == "请选择") {
+                fl_id = "";
+            }
+            if (st_no == "请选择") {
+                st_no = "";
+            }
             $('#part_id_s').combobox({
                 url: '/HttpHandlers/TorqueReporterHandler.ashx?method=get_part_list&fl_id=' + fl_id + '&st_no=' + st_no,
                 method: "post",

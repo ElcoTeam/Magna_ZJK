@@ -158,6 +158,7 @@
                 collapsible: false,
                 striped: true,
                 fitColumns: true,
+                emptyMsg: "<span>没有找到相关记录</span>",
                 columns: [[
                       { field: 'prop_id', title: '材质id', hidden: true, align: "center" },
                       { field: 'prop_name', title: '材质', width: 100, hidden: false, align: "center" },

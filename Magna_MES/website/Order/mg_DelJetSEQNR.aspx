@@ -71,7 +71,7 @@
                 columns: [[ //数据表格列配置对象，查看列属性以获取更多细节
 							{ field: 'SEQNR', title: '订单序号' },
                 ]],
-
+                emptyMsg: "<span>没有找到相关记录</span>",
                 onLoadSuccess: function (data) {
                     console.log(data);
                   

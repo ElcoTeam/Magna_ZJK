@@ -423,6 +423,10 @@
 	    function reloadst_id_s() {
 	        $('#st_id_s').combobox('loadData', {});
 	        var fl_id = $('#fl_id_s').combobox('getValue');
+	        if (fl_id == "请选择") {
+	            fl_id = "";
+	        }
+	        
 	        $('#st_id_s').combobox({
 	            url: '/HttpHandlers/TorqueReporterHandler.ashx?method=get_st_listForTime&fl_id=' + fl_id,
 	            method: "post",
@@ -445,6 +449,12 @@
 	        $('#part_id_s').combobox('loadData', {});
 	        var fl_id = $('#fl_id_s').combobox('getValue');
 	        var st_no = $('#st_id_s').combobox('getValue');
+	        if (fl_id == "请选择") {
+	            fl_id = "";
+	        }
+	        if (st_no == "请选择") {
+	            st_no = "";
+	        }
 	        $('#part_id_s').combobox({
 	            url: '/HttpHandlers/TorqueReporterHandler.ashx?method=get_part_list&fl_id=' + fl_id + '&st_no=' + st_no,
 	            method: "post",

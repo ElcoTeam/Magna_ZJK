@@ -232,6 +232,7 @@
 	                sortName: 'StartTime',
 	                sortOrder: 'asc',
 	                queryParams: queryParams,
+	                emptyMsg: "<span>没有找到相关记录</span>",
 	                columns: [[
                                 { field: 'rowid', title: '序号', align: 'center', width: 100, },
                                 {
@@ -299,6 +300,7 @@
 	                sortName: 'CreateTime',
 	                sortOrder: 'asc',
 	                queryParams: queryParams,
+	                emptyMsg: "<span>没有找到相关记录</span>",
 	                columns: [[
                                 { field: 'rowid', title: '序号', align: 'center', width: 100, },
                                 {

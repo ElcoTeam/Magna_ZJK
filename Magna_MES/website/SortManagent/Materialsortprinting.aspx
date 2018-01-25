@@ -147,7 +147,8 @@
            // fitColumns: true,
             nowrap: false,
             resizable:true,
-            pageSize:10,
+            pageSize: 10,
+            emptyMsg: "<span>没有找到相关记录</span>",
             columns: [[
 
                   { field: '序号', title: '序号', rowspan: 2, width: 50, align: "center", sortable: true, styler: function (value, row, index) { return 'rowspan: 2,' } },
@@ -225,6 +226,7 @@
                     nowrap: false,
                     resizable: true,
                     pageSize: 10,
+                    emptyMsg: "<span>没有找到相关记录</span>",
                     columns: [[
 
                           { field: '序号', title: '序号', rowspan: 2, width: 50, align: "center", sortable: true },

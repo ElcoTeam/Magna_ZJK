@@ -131,6 +131,7 @@
                 pagination: true,
                 singleSelect: true,
                 collapsible: false,
+                emptyMsg: "<span>没有找到相关记录</span>",
                 columns: [[
 					{ field: 'OrderID', title: 'OrderID', width: 50, align: "center" },
 					{ field: 'CustomerNumber', title: 'CustomerNumber', width: 100, align: "center" },

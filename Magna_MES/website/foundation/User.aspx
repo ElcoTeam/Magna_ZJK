@@ -205,6 +205,7 @@
                 collapsible: false,
                 striped: true,
                 fitColumns: true,
+                emptyMsg: "<span>没有找到相关记录</span>",
                 columns: [[
                       //{ field: 'ck', checkbox: true },
                       { field: 'user_depid', title: '部门id', hidden: true },

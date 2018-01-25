@@ -212,6 +212,7 @@
                 sortOrder: 'asc',
                 remoteSort: true,
                 idField: 'id',
+                emptyMsg: "<span>没有找到相关记录</span>",
                 columns: [[
 							{ field: 'step_id', title: 'id', hidden: true },
 							{ field: 'fl_id', title: '流水线id', hidden: true },
@@ -360,6 +361,9 @@
         function reloadst_id_s() {
             $('#st_id_s').combobox('loadData', {});
             var fl_id = $('#fl_id_s').combobox('getValue');
+            if (fl_id == "请选择") {
+                fl_id = "";
+            }
             $('#st_id_s').combobox({
                 url: '/HttpHandlers/TorqueReporterHandler.ashx?method=get_st_listforcheck&fl_id=' + fl_id,
                 method: "post",
@@ -381,7 +385,13 @@
         function reloadpart_id_s() {
             $('#part_id_s').combobox('loadData', {});
             var fl_id = $('#fl_id_s').combobox('getValue');
+            if (fl_id == "请选择") {
+                fl_id = "";
+            }
             var st_no = $('#st_id_s').combobox('getValue');
+            if (st_no == "请选择") {
+                st_no = "";
+            }
             $('#part_id_s').combobox({
                 url: '/HttpHandlers/TorqueReporterHandler.ashx?method=get_part_list&fl_id=' + fl_id + '&st_no=' + st_no,
                 method: "post",
