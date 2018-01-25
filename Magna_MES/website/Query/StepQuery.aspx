@@ -172,6 +172,13 @@
             var fl_name = $('#fl_id_s').combobox('getText');
             //alert(fl_name);
             var st_no = $('#st_id_s').combobox('getText');
+            
+            if (fl_name == "请选择") {
+                fl_name = "";
+            }
+            if (st_no == "请选择") {
+                st_no = "";
+            }
             var start_time = $('#start_time').datetimebox('getValue');
             var end_time = $('#end_time').datetimebox('getValue');
 
@@ -296,6 +303,12 @@
             var fl_name = $('#fl_id_s').combobox('getText');
             //alert(fl_name);
             var st_no = $('#st_id_s').combobox('getText');
+            if (fl_name == "请选择") {
+                fl_name = "";
+            }
+            if (st_no == "请选择") {
+                st_no = "";
+            }
             var start_time = $('#start_time').datetimebox('getValue');
             var end_time = $('#end_time').datetimebox('getValue');
 
@@ -415,6 +428,12 @@
             var fl_name = $('#fl_id_s').combobox('getText');
             //alert(fl_name);
             var st_no = $('#st_id_s').combobox('getText');
+            if (fl_name == "请选择") {
+                fl_name = "";
+            }
+            if (st_no == "请选择") {
+                st_no = "";
+            }
             var start_time = $('#start_time').datetimebox('getValue');
             var end_time = $('#end_time').datetimebox('getValue');
 

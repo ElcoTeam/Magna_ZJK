@@ -449,7 +449,7 @@
         public static DataSet GetDataSetTableMapping(string connectionString, CommandType cmdType, string cmdText, string[] tableName, params SqlParameter[] commandParameters)
         {
             SqlConnection conn = null;
-            DataSet set2;
+            DataSet set2 = new DataSet();
             try
             {
                 conn = new SqlConnection(connectionString);

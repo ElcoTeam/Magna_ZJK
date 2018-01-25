@@ -83,6 +83,15 @@
             var fl_name = $('#fl_id_s').combobox('getText');
             //alert(fl_name);
             var st_no = $('#st_id_s').combo('getValue');
+            if (fl_id == "请选择") {
+                fl_id = "";
+            }
+            if (fl_name == "请选择") {
+                fl_name = "";
+            }
+            if (st_no == "请选择") {
+                st_no = "";
+            }
             var start_time = $('#start_time').datetimebox('getValue');
             var end_time = $('#end_time').datetimebox('getValue');
             var queryParams =
@@ -136,6 +145,15 @@
             var fl_name = $('#fl_id_s').combobox('getText');
             //alert(fl_name);
             var st_no = $('#st_id_s').combo('getValue');
+            if (fl_id == "请选择") {
+                fl_id = "";
+            }
+            if (fl_name == "请选择") {
+                fl_name = "";
+            }
+            if (st_no == "请选择") {
+                st_no = "";
+            }
             var start_time = $('#start_time').datetimebox('getValue');
             var end_time = $('#end_time').datetimebox('getValue');
             //var index = start_time.lastIndexOf(':');
@@ -190,6 +208,15 @@
             var fl_name = $('#fl_id_s').combobox('getText');
             //alert(fl_name);
             var st_no = $('#st_id_s').combo('getValue');
+            if (fl_id == "请选择") {
+                fl_id = "";
+            }
+            if (fl_name == "请选择") {
+                fl_name = "";
+            }
+            if (st_no == "请选择") {
+                st_no = "";
+            }
             var start_time = $('#start_time').datetimebox('getValue');
             var end_time = $('#end_time').datetimebox('getValue');
             var queryParams =
@@ -385,10 +412,11 @@
         function reloadpart_id_s() {
             $('#part_id_s').combobox('loadData', {});
             var fl_id = $('#fl_id_s').combobox('getValue');
+            var st_no = $('#st_id_s').combobox('getValue');
             if (fl_id == "请选择") {
                 fl_id = "";
             }
-            var st_no = $('#st_id_s').combobox('getValue');
+            
             if (st_no == "请选择") {
                 st_no = "";
             }

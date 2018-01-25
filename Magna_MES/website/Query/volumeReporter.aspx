@@ -117,6 +117,10 @@
 
 	    function excelFor() {
 	        var st_no = $('#st_id_s').combobox('getText');
+	        
+	        if (st_no == "请选择") {
+	            st_no = "";
+	        }
 	        var start_time = $('#start_time').datetimebox('getValue');
 	        var end_time = $('#end_time').datetimebox('getValue');
 	        var flag = $('#reportType').combo('getValue');
@@ -216,6 +220,10 @@
 				effect: 'whirling'
 			});
 			var st_no = $('#st_id_s').combobox('getText');
+			
+			if (st_no == "请选择") {
+			    st_no = "";
+			}
 			var start_time = $('#start_time').datetimebox('getValue');
 			var end_time = $('#end_time').datetimebox('getValue');
 			var flag = $('#reportType').combo('getValue');
@@ -232,6 +240,11 @@
 				dataType: 'json',
                 cache:false,
                 success: function (data) {
+                    if (data.length < 1) {
+                        alert("没有找到相关数据");
+                        myChart.clear();
+                        return;
+                    }
                     //var myChart = require('echarts').init(document.getElementById('chart_container'));
 					var option = {
 						title: {
