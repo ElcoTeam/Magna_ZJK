@@ -19,11 +19,10 @@
 .top .delBtn:hover { border: 1px solid #999; background-color: #eee; }
 .top .penBtn { background-image: url('/image/admin/pen.png'); }
 .top .penBtn:hover { border: 1px solid #999; background-color: #eee; }
-
-.top .topexcelBtn { background-image: url('/image/admin/Excel.png'); }
-.top .topexcelBtn:hover { border: 1px solid #999; background-color: #eee; }
 .top .topprintBtn { background-image: url('/image/admin/print.jpg'); }
 .top .topprintBtn:hover { border: 1px solid #999; background-color: #eee; }
+.top .topexcelBtn { background-image: url('/image/admin/Excel.png'); }
+.top .topexcelBtn:hover { border: 1px solid #999; background-color: #eee; }
 .top .topsearchBtn { background-image: url('/image/admin/Search.png'); }
 .top .topsearchBtn:hover { border: 1px solid #999; background-color: #eee; }
 .top .topaddBtn { background-image: url('/image/admin/add.png'); }
@@ -33,8 +32,7 @@
 .top .toppenBtn { background-image: url('/image/admin/pen.png'); }
 .top .toppenBtn:hover { border: 1px solid #999; background-color: #eee; }
 
-.top table tr td input { line-height: 30px; height: 30px; }
-.top table tr td select { line-height: 30px; height: 30px; }
+.top table tr td input { line-height: 28px; height: 28px; }
 
 .fixtop { top: 0px; height: 50px; padding: 0px; background-color: #F0F3F8; border: 1px solid #CBD0D4; width: 99%; }
 .fixtop table { border: 0px; }
@@ -82,7 +80,7 @@
 #contenttop .delBtn:hover { border: 1px solid #999; background-color: #eee; }
 #contenttop .penBtn { background-image: url('/image/admin/pen.png'); }
 #contenttop .penBtn:hover { border: 1px solid #999; background-color: #eee; }
-#contenttop table tr td input { line-height: 30px; height: 30px; border-width: 1px; border-style: solid; border: 1px solid #ccc; }
+#contenttop table tr td input { line-height: 28px; height: 28px; border-width: 1px; border-style: solid; border: 1px solid #ccc; }
 .gridview { border-top: 1px solid #ccc; border-left: 1px solid #ccc; }
 .gridview th { padding: 5px 10px; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; background-color: #f0f0f0; }
 .gridview td { padding: 5px 10px; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; }
@@ -97,16 +95,35 @@
     .uservalue {      
         width:120px; 
      } 
+    .usertitle{
+        width:250px;
+    }
+    .autoselect {
+        width:150px; 
+    }
+
  }
 
  @media screen and (min-width: 1400px ) and (max-width: 1900px) { 
     .uservalue {      
         width:150px; 
      } 
+    .usertitle{
+        width:400px;
+    }
+     .autoselect {
+        width:200px; 
+    }
   }
 
   @media screen and (min-width: 1900px) { 
     .uservalue {      
         width:150px; 
      } 
+    .usertitle{
+        width:400px;
+    }
+     .autoselect {
+        width:200px; 
+    }
   } 

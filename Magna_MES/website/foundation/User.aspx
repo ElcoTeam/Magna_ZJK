@@ -21,6 +21,9 @@
                 <td style="width: 120px">
                     <a class="topdelBtn">删除所选</a>
                 </td>
+                 <td style="width: 120px;">
+                    <a  class="topexcelBtn" href="javascript:;" onclick="excelForm()">导出Excel</a>
+                </td>
             </tr>
         </table>
     </div>
@@ -159,7 +162,7 @@
             $('.topaddBtn').first().click(function () {
                 isEdit = false;
                 //$("#user_no").removeAttr("disabled", "disabled");
-                
+
                 $('#w').window('open');
             });
 
@@ -187,13 +190,13 @@
                 //    //$('#menuTree').tree('check', node1.target);  
                 //    alert($(this).tree('getParent', node.target));//选中父节点
                 //}
-               
+
             });
             $('#menuTreeShow').tree({
                 //data: menuJSON
                 url: "../Menu/GetMenuList.ashx?ACTION=menutree",
             });
-           
+
             //数据列表加载
             dg = $('#tb').datagrid({
                 url: "/HttpHandlers/UserHandler.ashx?method=queryUserList",
@@ -217,7 +220,7 @@
                       //{ field: 'user_id', title: 'id', width: 100, align: "center" },
                       { field: 'user_no', title: '工号', width: 100, align: "center" },
                       { field: 'user_name', title: '姓名', width: 100, align: "center" },
-                      
+
                       { field: 'user_pwd', title: '密码', hidden: true },
                       { field: 'user_depid_name', title: '部门', width: 100, align: "center" },
                       { field: 'user_posiid_name', title: '职位', width: 100, align: "center" },
@@ -235,16 +238,16 @@
 
             //编辑窗口加载
             $('#w').window({
-                modal:true,
-                closed:true,
-                minimizable:false,
-                maximizable:false,
-                collapsible:false,
-                width:750,
-                height:500,
-                footer:'#ft',
-                top:20,
-                onBeforeClose:function(){clearw();},
+                modal: true,
+                closed: true,
+                minimizable: false,
+                maximizable: false,
+                collapsible: false,
+                width: 750,
+                height: 500,
+                footer: '#ft',
+                top: 20,
+                onBeforeClose: function () { clearw(); },
                 onBeforeOpen: function () { $('#w').css('visibility', 'visible'); $('#ft').css('visibility', 'visible'); }
             });
             reloaddepid();  //部门下拉框数据加载
@@ -252,18 +255,18 @@
 
             //权限展示窗口加载
             $('#showw').window({
-                modal:true,
-                closed:true,
-                minimizable:false,
-                maximizable:false,
-                collapsible:false,
-                width:250,
-                height:450,
-                top:20,
+                modal: true,
+                closed: true,
+                minimizable: false,
+                maximizable: false,
+                collapsible: false,
+                width: 250,
+                height: 450,
+                top: 20,
                 onBeforeOpen: function () { $('#showw').css('visibility', 'visible'); }
             });
 
-           
+
 
         });
 
@@ -271,13 +274,12 @@
 
         //新增 / 编辑  操作工档案
         function saveUser() {
-            
+
             var user_id = isEdit == true ? user_no : "";
             var user_depid = $('#user_depid').combo('getValue');
             var user_posiid = $('#user_posiid').combo('getValue');
             var user_no = $('#user_no').val();
-            if (user_no == "")
-            {
+            if (user_no == "") {
                 alert("工号不能为空");
                 return false;
             }
@@ -285,17 +287,16 @@
             var user_name = $('#user_name').val();
             var user_email = $('#user_email').val();
             var user_pwd = $('#user_pwd').val();
-            if (!$("#user_pwd").validatebox('isValid'))
-            {
+            if (!$("#user_pwd").validatebox('isValid')) {
                 return false;
             }
-            
+
             var user_sex = ($('#user_sex').switchbutton('options').checked == true) ? 1 : 0;
             var user_isAdmin = ($('#user_isAdmin').switchbutton('options').checked == true) ? 1 : 0;
 
             var menuidArr = new Array();
             var nodes = $('#menuTree').tree('getChecked');
-            var pnodes = $('#menuTree').tree('getChecked','indeterminate');
+            var pnodes = $('#menuTree').tree('getChecked', 'indeterminate');
             for (var i = 0; i < nodes.length; i++) {
 
                 var len = nodes[i].id.indexOf('_');
@@ -320,7 +321,7 @@
             }
             for (var i = 0; i < pnodes.length; i++) {
                 menuidArr.push(pnodes[i].id);
-                
+
             }
             //alert(menuidArr.join(','));
             console.log(menuidArr.join(','));
@@ -328,13 +329,12 @@
             var user_menuids = menuidArr.join(',');
 
             var user_oldno = "";
-            if (isEdit)
-            {
+            if (isEdit) {
                 var selRows = dg.datagrid('getSelections');
                 var row = selRows[0];
                 user_oldno = row.user_no;
             }
-           
+
             var model = {
                 user_id: user_id,
                 user_depid: user_depid,
@@ -390,7 +390,7 @@
             //窗体数据初始化
             var row = selRows[0];
             userid = row.user_id;
-          
+
             $('#user_depid').combobox('select', row.user_depid == 0 ? "" : row.user_depid);
             $('#user_posiid').combobox('select', row.user_posiid == 0 ? "" : row.user_posiid);
             $('#user_no').val(row.user_no);
@@ -454,7 +454,7 @@
         //查看菜单权限
         function showMenuRole(value) {
             var menuidArr = value.split(',');
-           
+
             //expendMenuTree();
             var nodes = $('#menuTreeShow').tree('getChildren');
             for (var i = 0; i < nodes.length; i++) {
@@ -494,7 +494,7 @@
             $('#user_email').val('');
             $('#user_isAdmin').switchbutton('uncheck');
             $('#user_sex').switchbutton('check');
-             
+
             collapseMenuTree();
         }
         function collapseMenuTree() {
@@ -525,6 +525,32 @@
                 $('#menuTreeShow').tree('uncheck', nodes[i].target);
                 $('#menuTreeShow').tree('expand', nodes[i].target);
             }
+        }
+
+        ///导出 
+        function excelForm() {
+
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "/HttpHandlers/Services1000_SysLog.ashx",
+                data: { "method": "Export" },
+                success: function (data) {
+                    console.log(data);
+                    //alert(data.Result);
+                    if (data.Result == "true") {
+
+                        alert('导出成功');
+                        $("#sub").click();
+                        //dg.datagrid('reload');
+                    }
+                    else alert('导出失败');
+                    $('#w').window('close');
+                },
+                error: function () {
+                }
+            });
+
         }
     </script>
 </asp:Content>
