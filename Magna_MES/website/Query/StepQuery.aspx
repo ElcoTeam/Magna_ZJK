@@ -29,7 +29,7 @@
                     <span style="margin-left: 10px;">流水线：</span>
                     <select id="fl_id_s" class="easyui-combobox uservalue" 
                         data-options="valueField: 'fl_id',textField: 'fl_name',onChange:reloadst_id_s">
-                    </select>
+                    </select>  
                 </td>
                 <td style="width: 12.5%">
                     <span>工位：</span>
