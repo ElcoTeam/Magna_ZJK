@@ -505,8 +505,9 @@ namespace DAL
                                   ,step.[barcode_start]
                                   ,step.[barcode_number]
                               FROM [mg_step] step
-                              left join mg_FlowLine fl on step.fl_id = fl.fl_id
+                             
                               left join mg_station st on st.st_id=step.st_id
+                              left join mg_FlowLine fl on st.fl_id = fl.fl_id
                               left join mg_part p on p.part_id=step.part_id
                               left join mg_Property prop on prop.prop_id = p.part_categoryid
                               left join mg_Property prop1 on prop1.prop_id = st.st_typeid 
