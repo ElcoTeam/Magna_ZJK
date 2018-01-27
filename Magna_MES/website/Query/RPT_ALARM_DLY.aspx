@@ -272,7 +272,14 @@
             function paint() {
                 //横轴坐标 小时代号
                 var lheight = $("#left").height();
-                $("#right").height(lheight);
+                if (lheight < 600) {
+                    lheight = 600;
+                    $("#right").height(lheight);
+                }
+                else {
+                    $("#right").height(lheight);
+                }
+              //  $("#right").height(lheight);
                 var theight = $(".top").height();
                 $("#lable_time").height(theight);
                 $('#upright_container').height((lheight - theight-30) * 0.5);

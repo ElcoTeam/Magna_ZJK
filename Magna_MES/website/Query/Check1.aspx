@@ -85,9 +85,9 @@
                                 <div>
                                     <select id="st_id_s" class="easyui-combobox uservalue" >
                                         <option value="请选择" selected ="selected">请选择</option >
-                                        <option value="FSA160">FSA160</option >
-                                        <option value="FSA170">FSA170</option >
-                                        <option value="FSA210" selected="selected">FSA210</option >
+                                        <option value="FS120">FS120</option >
+                                        <option value="FS130">FS130</option >
+                                        <option value="FS140" selected="selected">FS140</option >
 					                </select>
                                 </div>
                             </li>
