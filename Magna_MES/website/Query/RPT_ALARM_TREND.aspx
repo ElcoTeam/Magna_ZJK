@@ -275,6 +275,9 @@ function myLoader(param, success, error) {
 
             function paint() {
                 //高度设置
+                //var lheight = $("#left").height();
+                // $("#right").height(lheight);
+                
                 var lheight = $("#left").height();
                 if (lheight < 600) {
                     lheight = 600;
